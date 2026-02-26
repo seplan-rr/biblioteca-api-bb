@@ -1,10 +1,13 @@
 [project]
-name = "biblioteca-api-bb"
-version = "0.1.0"
-description = "Add your description here"
+name = "api_bb"
+version = "0.2.0"
+description = "Wrapper da API do Banco do Brasil."
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "pandas>=3.0.1",
     "requests>=2.32.5",
 ]
+
+[tool.setuptools]
+packages = ["api_bb"]

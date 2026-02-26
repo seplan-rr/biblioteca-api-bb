@@ -4,7 +4,7 @@ from importlib.metadata import version
 try:
     __version__ = version("api_bb")
 except:
-    __version__ = "0.0.0"
+    __version__ = "0.2.0"
 
 
 from .common import Ambiente

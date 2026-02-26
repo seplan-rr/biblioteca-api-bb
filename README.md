@@ -2,6 +2,20 @@
 
 *Wrapper* da API do Banco do Brasil.
 
+## Como instalar?
+
+Se você usar o `uv`:
+
+```sh
+uv add api_bb
+```
+
+Se você usar o `pip`:
+
+```sh
+pip install api_bb
+```
+
 ## Funcionalidades
 
 - Lê os parâmetros `app_key`, `client_id` e `client_secret` das variáveis de
