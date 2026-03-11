@@ -1,6 +1,7 @@
 import re
 import pandas as pd
 from enum import Enum
+from sys import stderr
 from typing import Any, Dict, NewType, Sequence, Union
 from datetime import date, datetime, timedelta
 
@@ -45,6 +46,8 @@ def _handle_dates(v: DateLike) -> str:
 
     v = v.strftime("%Y-%m-%d")
 
+    return v
+
 
 def _handle_results(
     data: Any,
@@ -70,3 +73,7 @@ def _handle_results(
         df = df.rename(rename_dict, axis=1)
 
     return df
+
+
+def _handle_error(data: Any):
+    print(f"Houve um erro. Resposta obtida: {data}", file=stderr)

@@ -120,6 +120,7 @@ class _AccountabilityV3BaseAPI:
             )
 
             if res.status_code != 200:
+                common._handle_error(res.json())
                 raise Exception(
                     "Não foi possível adquirir as novas credenciais de acesso."
                 )
@@ -153,6 +154,7 @@ class _AccountabilityV3BaseAPI:
         )
 
         if res.status_code != 200:
+            common._handle_error(res.json())
             raise Exception(
                 "Não foi possível listar as categorias do programa de governo."
             )
@@ -224,6 +226,7 @@ class AccountabilityV3RepasseAPI(_AccountabilityV3BaseAPI):
         )
 
         if res.status_code != 200:
+            common._handle_error(res.json())
             raise Exception(
                 "Não foi possível reaver o extrato do órgão repassador."
             )
@@ -300,6 +303,7 @@ class AccountabilityV3RepasseAPI(_AccountabilityV3BaseAPI):
         )
 
         if res.status_code != 200:
+            common._handle_error(res.json())
             raise Exception(
                 "Não foi possível reaver o extrato do órgão repassador."
             )
@@ -433,6 +437,7 @@ class AccountabilityV3RepasseAPI(_AccountabilityV3BaseAPI):
         )
 
         if res.status_code != 200:
+            common._handle_error(res.json())
             raise Exception(
                 "Não foi possível reaver o extrato do órgão repassador."
             )
@@ -567,6 +572,7 @@ class AccountabilityV3RepasseAPI(_AccountabilityV3BaseAPI):
         )
 
         if res.status_code != 200:
+            common._handle_error(res.json())
             raise Exception(
                 "Não foi possível reaver o extrato do órgão repassador."
             )
@@ -639,6 +645,7 @@ class AccountabilityV3RepasseAPI(_AccountabilityV3BaseAPI):
         )
 
         if res.status_code != 200:
+            common._handle_error(res.json())
             raise Exception(
                 "Não foi possível listar as categorias do programa de governo."
             )
@@ -784,6 +791,7 @@ class AccountabilityV3RepasseAPI(_AccountabilityV3BaseAPI):
         )
 
         if res.status_code != 200:
+            common._handle_error(res.json())
             raise Exception(
                 "Não foi possível listar as categorias do programa de governo."
             )
@@ -851,6 +859,7 @@ class AccountabilityV3RepasseAPI(_AccountabilityV3BaseAPI):
         )
 
         if res.status_code != 200:
+            common._handle_error(res.json())
             raise Exception(
                 "Não foi possível listar as categorias do programa de governo."
             )
@@ -894,6 +903,7 @@ class AccountabilityV3RepasseAPI(_AccountabilityV3BaseAPI):
         )
 
         if res.status_code != 200:
+            common._handle_error(res.json())
             raise Exception(
                 "Não foi possível listar as categorias do programa de governo."
             )
@@ -930,6 +940,7 @@ class AccountabilityV3RepasseAPI(_AccountabilityV3BaseAPI):
         )
 
         if res.status_code != 200:
+            common._handle_error(res.json())
             raise Exception(
                 "Não foi possível listar as categorias do programa de governo."
             )
@@ -960,6 +971,7 @@ class AccountabilityV3RepasseAPI(_AccountabilityV3BaseAPI):
         )
 
         if res.status_code != 200:
+            common._handle_error(res.json())
             raise Exception(
                 "Não foi possível listar as categorias do programa de governo."
             )
@@ -999,6 +1011,7 @@ class AccountabilityV3RepasseAPI(_AccountabilityV3BaseAPI):
         )
 
         if res.status_code != 200:
+            common._handle_error(res.json())
             raise Exception(
                 "Não foi possível listar as categorias do programa de governo."
             )
@@ -1046,6 +1059,7 @@ class AccountabilityV3RepasseAPI(_AccountabilityV3BaseAPI):
         )
 
         if res.status_code not in [200, 201]:
+            common._handle_error(res.json())
             raise Exception(
                 "Não foi possível listar as categorias do programa de governo."
             )
@@ -1095,6 +1109,7 @@ class AccountabilityV3RepasseAPI(_AccountabilityV3BaseAPI):
         )
 
         if res.status_code not in [200, 201]:
+            common._handle_error(res.json())
             raise Exception(
                 "Não foi possível listar as categorias do programa de governo."
             )
@@ -1128,6 +1143,7 @@ class AccountabilityV3RepasseAPI(_AccountabilityV3BaseAPI):
         )
 
         if res.status_code not in [200, 201]:
+            common._handle_error(res.json())
             raise Exception(
                 "Não foi possível listar as categorias do programa de governo."
             )
@@ -1159,6 +1175,7 @@ class AccountabilityV3RepasseAPI(_AccountabilityV3BaseAPI):
         )
 
         if res.status_code != 200:
+            common._handle_error(res.json())
             raise Exception(
                 "Não foi possível listar as categorias do programa de governo."
             )
@@ -1230,6 +1247,7 @@ class AccountabilityV3ControleAPI(_AccountabilityV3BaseAPI):
         )
 
         if res.status_code != 200:
+            common._handle_error(res.json())
             raise Exception(
                 "Não foi possível reaver o extrato do órgão repassador."
             )
@@ -1306,6 +1324,7 @@ class AccountabilityV3ControleAPI(_AccountabilityV3BaseAPI):
         )
 
         if res.status_code != 200:
+            common._handle_error(res.json())
             raise Exception(
                 "Não foi possível reaver o extrato do órgão repassador."
             )
@@ -1439,6 +1458,7 @@ class AccountabilityV3ControleAPI(_AccountabilityV3BaseAPI):
         )
 
         if res.status_code != 200:
+            common._handle_error(res.json())
             raise Exception(
                 "Não foi possível reaver o extrato do órgão repassador."
             )
@@ -1567,6 +1587,7 @@ class AccountabilityV3ControleAPI(_AccountabilityV3BaseAPI):
         )
 
         if res.status_code != 200:
+            common._handle_error(res.json())
             raise Exception(
                 "Não foi possível listar as categorias do programa de governo."
             )
@@ -1638,6 +1659,7 @@ class AccountabilityV3ControleAPI(_AccountabilityV3BaseAPI):
         )
 
         if res.status_code != 200:
+            common._handle_error(res.json())
             raise Exception(
                 "Não foi possível listar as categorias do programa de governo."
             )
@@ -1781,6 +1803,7 @@ class AccountabilityV3ControleAPI(_AccountabilityV3BaseAPI):
         )
 
         if res.status_code != 200:
+            common._handle_error(res.json())
             raise Exception(
                 "Não foi possível listar as categorias do programa de governo."
             )
@@ -1841,6 +1864,7 @@ class AccountabilityV3ControleAPI(_AccountabilityV3BaseAPI):
         )
 
         if res.status_code != 200:
+            common._handle_error(res.json())
             raise Exception(
                 "Não foi possível listar as categorias do programa de governo."
             )
